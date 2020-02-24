@@ -27,8 +27,8 @@ class Clock
   }
   public int checkDegrees()
   {
-    int hourDegrees = hourNum * 30;
     int minuteDegrees = minuteNum * 6;
+    int hourDegrees = (hourNum * 30) + (minuteNum / 2);
     int diffDegrees = Math.Abs(hourDegrees - minuteDegrees);
     if (diffDegrees > 180)
     {
